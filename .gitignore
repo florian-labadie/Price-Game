@@ -1,0 +1,73 @@
+# Python Bytecode
+src/__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# Configuration de l'IDE
+.vscode/
+.idea/
+
+# Fichiers générés par l'éditeur
+*.swp
+*.swo
+*.swn
+
+# Fichiers de logs
+*.log
+
+# Fichiers d'entrée
+input/
+
+# Données sensibles
+*.key
+*.pem
+*.p12
+*.cer
+*.crt
+*.der
+secrets.json
+
+# Fichiers de configuration locaux
+*.local
+*.env
+.env
+
+# Fichiers temporaires et autres fichiers de cache
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.retry
+*.rej
+*.~*
+
+# Données JSON utilisées pour les préférences
+preferences.json
+
+# Dossier de build
+build/
+dist/
+*.egg-info/
+
+# Fichiers spécifiques à l'OS
+.DS_Store
+Thumbs.db
+
+# Caches
+*.cache
+*.pycache
+__pycache__/
+*.sqlite3
+
+# Output files
+output/
+*.sqlite
