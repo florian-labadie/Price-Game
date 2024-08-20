@@ -7,9 +7,10 @@ Bienvenue dans le **Jeu du Juste Prix**, un jeu de devinettes simple mais captiv
 - [Fonctionnalités](#fonctionnalités)
 - [Installation](#installation)
 - [Utilisation](#utilisation)
+- [Exemple de Partie](#exemple-de-partie)
 - [Règles du Jeu](#règles-du-jeu)
-- [Contribuer](#contribuer)
-- [Licence](#licence)
+- [Structure du Projet](#structure-du-projet)
+- [Contributeurs](#contributeurs)
 
 ## ✨ Fonctionnalités
 
