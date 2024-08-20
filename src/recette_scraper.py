@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 def get_recipes(query, max_recipes=10):
     url = f'https://www.marmiton.org/recettes/recherche.aspx?aqt={query}'
     response = requests.get(url)
-    
+
     if response.status_code != 200:
         print(f"Erreur lors de la récupération de la page : {response.status_code}")
         return []
@@ -48,5 +48,5 @@ def get_recipes(query, max_recipes=10):
                 print(f" - {ingredient}")
     else:
         print("Aucune recette trouvée avec les critères donnés.")
-    
+
     return recipes
