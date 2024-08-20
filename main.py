@@ -1,20 +1,18 @@
-from src.recette_scraper import get_recipes
-from src.nutrition_calculator import calculate_nutrition
-
-def main():
-    query = input("Enter ingredients: ")
-    
-    recipes = get_recipes(query)
-        
-    # Extraire tous les ingrédients de toutes les recettes
-    all_ingredients = []
-    for recipe in recipes:
-        all_ingredients.extend(recipe['ingredients'])
-
-    # Calculer les calories totales
-    total_calories = calculate_nutrition(all_ingredients)
-    
-    print(f"Total Calories: {total_calories}")
+import sys
+from src.price_game import price_game
 
 if __name__ == "__main__":
-    main()
+    try:
+        if len(sys.argv) != 1:
+            print("Usage: ./price_game")
+        else:
+            print("Welcome to the Just Right Price game!")
+            print("Find the number between 1 and 10000.")
+            price_game()
+            print("Thank you for playing!")
+    except ValueError as ve:
+        print(f"Error: {ve}")
+        exit(-84)
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+        exit(84)
