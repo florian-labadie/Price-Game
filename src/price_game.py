@@ -1,8 +1,13 @@
 import random
 
-def price_game():
+def price_game(non_interactive=False):
     secret_number = random.randint(1, 10000)
     attempts = 0
+
+    if non_interactive:
+        print("Running in non-interactive mode...")
+        print(f"Secret number is {secret_number}")
+        return
 
     while True:
         attempts += 1
