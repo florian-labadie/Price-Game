@@ -34,7 +34,18 @@ Assurez-vous d'avoir Python installé sur votre système (la version 3.x est rec
 Pour lancer le jeu, exécutez simplement le script :
 
 ```bash
-./price_game
+make run
+```
+
+Pour lancer les tests, exécutez simplement le script :
+
+```bash
+make test
+```
+Pour plus d'informations sur les commandes du Makefile :
+
+```bash
+make help
 ```
 
 ## Exemple de Partie
@@ -69,9 +80,12 @@ Le projet est organisé comme suit :
 Price-Game/
 ├── src/                # Code source principal
 │   └── price_game.py   # Script principal pour l'interaction utilisateur
+├── tests/                # Test programme
+│   └── test.py         # test price_game.py
+│   └── test_main.py   # test main.py
 ├── .gitignore  
 ├── main.py             # Point d'entrée du script principal
-├── price_game          # Executable
+├── Makefile            # Exécute test et programme
 └── README.md           # Documentation du projet
 ```
 

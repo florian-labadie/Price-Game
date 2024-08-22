@@ -1,7 +1,7 @@
 import sys
 from src.price_game import price_game
 
-if __name__ == "__main__":
+def main():
     try:
         if len(sys.argv) != 1:
             print("Usage: ./price_game")
@@ -16,3 +16,6 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         exit(84)
+
+if __name__ == "__main__":
+    main()

@@ -12,9 +12,9 @@ def price_game():
         if user_guess == secret_number:
             print(f"Congratulations! You found the secret number in {attempts} attempts.")
             break
+        elif user_guess < 1 or user_guess > 10000:
+            print("Please enter a number between 1 and 10000.")
         elif user_guess < secret_number:
             print("The secret number is greater.")
         elif user_guess > secret_number:
             print("The secret number is smaller.")
-        elif user_guess < 1 or user_guess > 10000:
-            print("Please enter a number between 1 and 10000.")
