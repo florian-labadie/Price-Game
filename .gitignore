@@ -1,16 +1,9 @@
 # Python Bytecode
 src/__pycache__/
-*.py[cod]
-*$py.class
 
 # Configuration de l'IDE
 .vscode/
 .idea/
-
-# Fichiers générés par l'éditeur
-*.swp
-*.swo
-*.swn
 
 # Fichiers de logs
 *.log
