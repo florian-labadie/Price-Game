@@ -9,7 +9,7 @@ class TestMain(unittest.TestCase):
     def test_main_wrong_usage(self, mock_print):
         sys.argv = ["./price_game", "extra_argument"]
         main()
-        mock_print.assert_called_once_with("Usage: ./price_game")
+        mock_print.assert_called_once_with("Usage: ./price_game [--non-interactive]")
 
 if __name__ == '__main__':
     unittest.main()
