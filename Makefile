@@ -14,7 +14,7 @@ help:
 run:
 	$(PYTHON) $(MAIN_SCRIPT)
 
-run_CI/CD:
+run_CI-CD:
 	$(PYTHON) $(MAIN_SCRIPT) --non-interactive
 
 test:
